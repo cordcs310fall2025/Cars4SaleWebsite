@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Marketplace</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1.5rem;
+    }
+    .car-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .car-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .car-card .info {
+      padding: 1rem;
+    }
+    .car-card .info h3 {
+      margin: 0 0 0.5rem 0;
+    }
+    .price {
+      font-weight: bold;
+      color: #208966;
+      margin-top: 0.5rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Car Marketplace</h1>
+  </header>
+
+  <div class="container">
+    <h2>Available Cars</h2>
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHonda_Civic&psig=AOvVaw2dExsnTb3V1RlPNKq4oLtz&ust=1761742913059000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIjY1_X5xpADFQAAAAAdAAAAABAE" alt="Car Image" />
+        <div class="info">
+          <h3>2020 Honda Civic</h3>
+          <p>Reliable, fuel-efficient sedan in excellent condition.</p>
+          <p class="price">$18,500</p>
+          <a class="btn" href="#">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?w=800" alt="2019 Toyota Corolla" />
+        <div class="info">
+          <h3>2019 Toyota Corolla</h3>
+          <p>Low mileage and very well maintained.</p>
+          <p class="price">$16,200</p>
+          <a class="btn" href="#">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1615733231657-403d52c9a315?w=800" alt="2021 BMW 3 Series" />
+        <div class="info">
+          <h3>2021 BMW 3 Series</h3>
+          <p>Sporty luxury sedan with premium interior.</p>
+          <p class="price">$32,000</p>
+          <a class="btn" href="#">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
